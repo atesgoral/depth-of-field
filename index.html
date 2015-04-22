@@ -15,10 +15,7 @@
 <link rel="stylesheet" href="http://s.magnetiq.com/style/fix_ie6.css?1" type="text/css"/>
 <![endif]-->
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script type="text/javascript" src="http://s.magnetiq.com/lib/cufon/cufon-yui.js"></script>
-<script type="text/javascript" src="http://s.magnetiq.com/lib/cufon/Museo_700_600.font.js"></script>
-<script type="text/javascript" src="http://s.magnetiq.com/js/enhance.js?3"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.8/processing.min.js"></script>
 </head>
 <body class="permalink disqus">
 <div id="header">
@@ -64,8 +61,7 @@ When a photograph is taken with a camera, the lens is focused at a particular di
 <p>Instead of creating a single, in-focus image from two images, I wanted to see how a smooth morphing effect would look like.</p>
 
 <p class="center">
-    <applet code="Depth_of_Field" archive="multi_focus.jar" width="250" height="250">
-</applet>
+	<canvas data-processing-sources="multi_focus.pde" width="250" height="250"></canvas>
 </p>
 
 <p>Hovering over the image controls how much each of the two images contributes to the final image. Vertical movement controls the contribution amount of the image where the bottle at the front in-focus. Horizontal movement controls the image where the bottle at the back is in-focus.</p>
@@ -100,15 +96,5 @@ When a photograph is taken with a camera, the lens is focused at a particular di
 	</div>
 </div>
 
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-var pageTracker = _gat._getTracker("UA-912088-1");
-pageTracker._setDomainName(".magnetiq.com");
-pageTracker._trackPageview();
-} catch(err) {}</script>
 </body>
 </html>
